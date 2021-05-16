@@ -1,0 +1,12 @@
+.images{
+    /* text-align: center; */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container{
+    padding: 50px;
+    text-align: center;
+}

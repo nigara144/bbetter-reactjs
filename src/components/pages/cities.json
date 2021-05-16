@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "city": "Hadera",
+        "tag": "Hadera"
+    },
+    {
+        "id": "2",
+        "city": "Cesarea",
+        "tag": "Cesarea"
+    },
+    {
+        "id": "3",
+        "city": "Petah-Tikva",
+        "tag": "Petah-Tikva"
+    },
+    {
+        "id": "4",
+        "city": "Afula",
+        "tag": "Afula"
+    },
+    {
+        "id": "5",
+        "city": "Beer-Sheva",
+        "tag": "Beer-Sheva"
+    },
+    {
+        "id": "6",
+        "city": "Ramat-Gan",
+        "tag": "Ramat-Gan"
+    },
+    {
+        "id": "7",
+        "city": "Tel-Aviv",
+        "tag": "Tel-Aviv"
+    },
+    {
+        "id": "8",
+        "city": "Jerusalem",
+        "tag": "Jerusalem"
+    },
+    {
+        "id": "9",
+        "city": "Raanana",
+        "tag": "Raanana"
+    },
+    {
+        "id": "10",
+        "city": "Hadera",
+        "tag": "Hadera"
+    }
+]
