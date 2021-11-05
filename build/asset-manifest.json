@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20b0b730.chunk.css",
+    "main.js": "/static/js/main.89a51ca6.chunk.js",
+    "main.js.map": "/static/js/main.89a51ca6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.488950cc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.488950cc.js.map",
+    "static/js/2.98071049.chunk.js": "/static/js/2.98071049.chunk.js",
+    "static/js/2.98071049.chunk.js.map": "/static/js/2.98071049.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.20b0b730.chunk.css.map": "/static/css/main.20b0b730.chunk.css.map",
+    "static/js/2.98071049.chunk.js.LICENSE.txt": "/static/js/2.98071049.chunk.js.LICENSE.txt",
+    "static/media/Food.08e3b28c.jpeg": "/static/media/Food.08e3b28c.jpeg",
+    "static/media/Knowledge.ea97b77f.jpg": "/static/media/Knowledge.ea97b77f.jpg",
+    "static/media/Tips.fe6df2fe.jpg": "/static/media/Tips.fe6df2fe.jpg",
+    "static/media/App.css": "/static/media/img-8.fabdf94d.jpg",
+    "static/media/video-3.5737a773.mp4": "/static/media/video-3.5737a773.mp4",
+    "static/media/vol.5cba8a59.jpg": "/static/media/vol.5cba8a59.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.488950cc.js",
+    "static/js/2.98071049.chunk.js",
+    "static/css/main.20b0b730.chunk.css",
+    "static/js/main.89a51ca6.chunk.js"
+  ]
+}
