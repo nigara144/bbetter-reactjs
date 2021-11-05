@@ -16,7 +16,8 @@
     font-size: 3rem;
 }
 
-.MyActivities {
+.MyActivities,
+.orgActivities {
     background-image: url('/src/images/img-2.jpg');
     background-position: center;
     background-size: cover;

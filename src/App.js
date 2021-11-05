@@ -13,8 +13,11 @@ import Tips from './components/pages/Tips';
 import Knowledge from './components/pages/Knowledge';
 import Food from './components/pages/Food';
 import Volunteer from './components/pages/Volunteer';
+import OrgActivities from './components/pages/OrgActivities'
 import CaesareaBeachCleanUp from './components/pages/VolunteerActivities/CaesareaBeachCleanUp';
 import HaderaTreePlant from './components/pages/VolunteerActivities/HaderaTreePlant';
+import ActivitiesFull from './components/pages/ActivitiesFull.js'
+import OrgActivitiesFull from './components/pages/OrgActivitiesFull.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -26,7 +29,9 @@ function App() {
         <Route path='/logged-org' exact component={LoggedOrg} />
         <Route path='/volunteer' exact component={Volunteer} />
         <Route path='/MyActivities' exact component={MyActivities} />
-
+        <Route path='/org-activities' exact component={OrgActivities} />
+        <Route path='/My_activities' exact component={ActivitiesFull} />
+        <Route path='/MyOrg_activities' exact component={OrgActivitiesFull} />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/contact' exact component={Contact} />

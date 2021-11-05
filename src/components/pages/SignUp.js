@@ -68,6 +68,7 @@ export default class SignUp extends Component {
                             onChange={this.changeFullName}
                             value={this.state.fullName}
                             className='form-control form-group'
+                            required
                         />
                         <input
                             type='text'
@@ -75,13 +76,15 @@ export default class SignUp extends Component {
                             onChange={this.changeEmail}
                             value={this.state.email}
                             className='form-control form-group'
+                            required
                         />
                         <input
-                            type='text'
+                            type='password'
                             placeholder='Password'
                             onChange={this.changePassword}
                             value={this.state.password}
                             className='form-control form-group'
+                            required
                         />
                         <input type='submit' class='btn btn-danger btn-block' value='Submit' />
                     </form>

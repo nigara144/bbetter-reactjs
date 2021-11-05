@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 export default class ActivitySignUp extends Component {
@@ -37,7 +38,6 @@ export default class ActivitySignUp extends Component {
 
     onSubmit(event) {
         event.preventDefault()
-
         const registered = {
             fullName: this.state.fullName,
             phoneNumber: this.state.email,
@@ -51,14 +51,15 @@ export default class ActivitySignUp extends Component {
             phoneNumber: '',
             numOfPeople: ''
         })
+        // this.props.history.push('/My_activities');
 
-        this.props.history.push('/');
+
     }
 
     render() {
         return (
             <div className="container">
-                <form class="activitySignUp" onSubmit={this.onSubmit}>
+                <form class="activitySignUp" >
                     <div><h3>Sign up for the activity</h3></div>
                     <input
                         type='text'
@@ -81,7 +82,8 @@ export default class ActivitySignUp extends Component {
                         value={this.state.numOfPeople}
                         className='form-control form-group'
                     />
-                    <input type='submit' class='btn btn-danger btn-block' value='Submit' />
+                    {/* <input type='submit' class='btn btn-danger btn-block' value='Submit'/> */}
+                    <Link to="/My_activities" className="btn btn-danger">Submit</Link>
                 </form>
             </div>
         )

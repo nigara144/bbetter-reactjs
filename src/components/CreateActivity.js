@@ -1,21 +1,24 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { withRouter } from 'react-router-dom';
 
 
-export default class CreateActivity extends Component {
-    constructor() {
-        super()
+class CreateActivity extends Component {
+    constructor(props) {
+        super(props)
         this.state = {
             title: '',
             address: '',
             date: '',
-            time: ''
+            time: '',
+            image: ''
         }
 
         this.changeTitle = this.changeTitle.bind(this)
         this.changeAddress = this.changeAddress.bind(this)
         this.changeDate = this.changeDate.bind(this)
         this.changeTime = this.changeTime.bind(this)
+        this.changeImg = this.changeImg.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
     }
 
@@ -43,6 +46,12 @@ export default class CreateActivity extends Component {
         })
     }
 
+    changeImg(event) {
+        this.setState({
+            image: event.target.value
+        })
+    }
+
     onSubmit(event) {
         event.preventDefault()
 
@@ -50,24 +59,27 @@ export default class CreateActivity extends Component {
             title: this.state.title,
             address: this.state.address,
             date: this.state.date,
-            time: this.state.time
+            time: this.state.time,
+            image: this.state.image
         }
-        axios.post('http://localhost:5000/app/add', registered)
+        axios.post('http://localhost:5000/act/add', registered)
             .then(response => console.log(response.data))
 
         this.setState({
             title: '',
             address: '',
             date: '',
-            time: ''
+            time: '',
+            image: ''
         })
 
-        this.props.history.push('/');
+        this.props.history.push('/MyOrg_activities');
+        // this.props.handleData(this.state);
     }
     render() {
         return (
             <div className="container">
-                <form className="new-activity">
+                <form className="new-activity" onSubmit={this.onSubmit} action="/" method="POST" >
                     <div><h3>Create a new activity</h3></div>
                     <input
                         type='text'
@@ -97,6 +109,14 @@ export default class CreateActivity extends Component {
                         value={this.state.time}
                         className='form-control form-group'
                     />
+                    <input
+                        type='text'
+                        placeholder='image url'
+                        onChange={this.changeImg}
+                        value={this.state.image}
+                        className='form-control form-group'
+                    />
+                    <img alt="" src={this.state.image} />
                     <input type='submit' class='btn btn-danger btn-block' value='Create' />
                 </form>
             </div>
@@ -104,3 +124,4 @@ export default class CreateActivity extends Component {
     }
 }
 
+export default withRouter(CreateActivity);

@@ -45,7 +45,7 @@ export default class SignUpOrganizer extends Component {
 
     onSubmit(event) {
         event.preventDefault()
-
+        console.log(this.state.organizerName);
         const registered = {
             organizerName: this.state.organizerName,
             email: this.state.email,
@@ -69,7 +69,7 @@ export default class SignUpOrganizer extends Component {
             <>
                 <Navbar />
                 <div className="container">
-                    <form class="sign-up-form">
+                    <form class="sign-up-form" onSubmit={this.onSubmit} action="/sign-up-organizer" method="POST">
                         <div><h3>Sign Up as Organizer</h3></div>
                         <input
                             type='text'
@@ -77,6 +77,7 @@ export default class SignUpOrganizer extends Component {
                             onChange={this.changeOrgName}
                             value={this.state.organizerName}
                             className='form-control form-group'
+                            required
                         />
                         <input
                             type='text'
@@ -84,6 +85,7 @@ export default class SignUpOrganizer extends Component {
                             onChange={this.changeEmail}
                             value={this.state.email}
                             className='form-control form-group'
+                            required
                         />
                         <input
                             type='text'
@@ -91,13 +93,15 @@ export default class SignUpOrganizer extends Component {
                             onChange={this.changePhone}
                             value={this.state.phoneNumber}
                             className='form-control form-group'
+                            required
                         />
                         <input
-                            type='text'
+                            type='password'
                             placeholder='Password'
                             onChange={this.changePassword}
                             value={this.state.password}
                             className='form-control form-group'
+                            required
                         />
                         <input type='submit' class='btn btn-danger btn-block' value='Submit' />
                     </form>

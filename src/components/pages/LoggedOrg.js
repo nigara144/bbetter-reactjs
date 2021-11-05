@@ -1,14 +1,14 @@
 import React from 'react'
 import '../../App.css'
 import Footer from '../Footer'
-import NavbarLoggedIn from '../NavbarLoggedIn'
+import NavbarLoggedOrg from '../NavbarOrg'
 import CreateActivity from '../CreateActivity'
 
 
 function LoggedOrg() {
     return (
         <>
-            <NavbarLoggedIn />
+            <NavbarLoggedOrg />
             <CreateActivity />
             <Footer />
         </>
